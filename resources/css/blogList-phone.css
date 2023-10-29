@@ -1,0 +1,99 @@
+/*inner-body*/
+.inner-body {
+  margin-top: 80px;
+  padding: 100px 20px 70px;
+}
+
+/* BLOG */
+.blog h1{
+  font-size: 20px;
+  margin: 5px;
+}
+
+.blog h2{
+  font-size: 14px;
+}
+
+.blog p{
+  font-size: 14px;
+}
+
+/* グリッドレイアウト */
+#grid-blog-container {
+  display: grid;
+  /* height: 300px; */
+  grid-template-rows: 40% 60%;
+  /*高さ*/
+  grid-template-columns: 100%;
+  /*幅*/
+}
+
+#blog-photo {
+  grid-row: 1 / 2;
+  grid-column: 1;
+  align-self: start;
+}
+
+#blog-detail {
+  grid-row: 2 / 3;
+  grid-column: 1;
+  padding: 10px;
+  align-self: end;
+}
+
+p.tag {
+  font-size: 12px;
+}
+
+/*BLOG文字の回転*/
+/* 文字の回転 */
+
+.animation_text {
+  top: 100px;
+}
+
+.animation_text2 {
+  bottom: 200px;
+}
+
+  /*ページネーション*/
+  .pagination {
+    margin: 70px auto;
+    position: relative;
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+  }
+  .pagination a,
+  .pagination span {
+    display: inline-block;
+    margin: 8px 4px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #5889a9;
+    width: 50px;
+    height: 50px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 1;
+  }
+  .pagination a:hover {
+    opacity: 0.7;
+  }
+  .pagination .current {
+    background: transparent;
+    font-weight: bold;
+    background: #fff;
+    color: #5889a9;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .pagination a,
+    .pagination span {
+      margin: 4px 2px;
+      width: 46px;
+      height: 46px;
+      padding: 16px 0;
+    }
+  }

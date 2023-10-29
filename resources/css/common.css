@@ -1,0 +1,181 @@
+/*共通スタイル*/
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4e4c4c;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #4e4c4c;
+}
+h3 {
+  font-weight: bold;
+  color: #4e4c4c;
+}
+
+p, a {
+  font-size: 20px;
+  color: #4e4c4c;
+}
+
+/*body*/
+#body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*ヘッダーメニュー*/
+header {
+  z-index: 9999;
+  padding: 0 5%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2a2a2a;
+  display: block;
+}
+
+.nav {
+  margin: 0 0 0 auto;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  line-height: 70px;
+}
+
+.menu-item {
+  margin: 0 0 0 50px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav li :hover {
+  color: #053E92;
+}
+
+#g-nav-list {
+  display: none;
+}
+
+
+/*inner-body*/
+.inner-body {
+  margin-top: 70px;
+}
+
+
+/*フッタースタイル*/
+footer {
+  bottom: 0;
+  /*下に固定*/
+  text-align: center;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  padding: 50px 0;
+  z-index: 1000;
+  position: relative;
+}
+footer h2{
+  margin: 30px 0;
+}
+footer a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* グリッドレイアウト */
+#grid-container {
+  display: grid;
+  grid-template-rows: 500px;
+  /*高さ*/
+  grid-template-columns: 40% 25% 35%;
+  /*幅*/
+}
+
+#itemA {
+  grid-column: 1 / 2;
+}
+
+.BlueStarLogo-footer img {
+  width: 300px;
+  height: auto;
+  margin: 70px 10px;
+}
+
+#itemA p {
+  margin-bottom: 50px;
+}
+
+
+#itemB {
+  grid-column: 2 / 3;
+  text-align: center;
+  margin:0 auto;
+}
+
+#itemB ul li {
+  margin: 50px;
+}
+
+#itemC {
+  grid-column: 3 / 4;
+  margin:0 auto;
+}
+#itemC input[type=button]{
+  width: 250px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: #5889a9;
+  margin: 15px 0;
+}
+.Link{
+  margin: 20px 0;
+}
+.HP-footer{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.HP-footer img{
+  width: 60px;
+  height: auto;
+  margin: 20px;
+}
+.Wantedly{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.Wantedly img{
+  width: 60px;
+  height: auto;
+  margin: 20px;
+}

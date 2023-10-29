@@ -1,0 +1,191 @@
+/*body*/
+#body {
+  background: linear-gradient(to right, #bebfc095 0%, #ffffff 30%, #bebfc095 100%);
+}
+
+/*inner-body*/
+.inner-body {
+  padding: 30px;
+}
+
+/* BLOG */
+.blog {
+  z-index: 1000;
+  position: relative;
+  margin: auto;
+}
+
+.blog h1{
+  font-size: 22px;
+  text-decoration: solid 1px #333;
+  margin: 5px;
+}
+
+.blog h2{
+  font-size: 16px;
+  color: #747474;
+  margin: 5px;
+}
+
+.blog p{
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* グリッドレイアウト */
+#grid-blog-container {
+  display: grid;
+  grid-template-rows: 200px;
+  /*高さ*/
+  grid-template-columns: 30% 70%;
+  /*幅*/
+}
+
+#blog-photo {
+  grid-column: 1 / 2;
+}
+
+#blog-detail {
+  grid-column: 2 / 3;
+  padding: 30px;
+}
+
+.blog-contents {
+  border-radius: 5px;
+  width: 90%;
+  /* padding-bottom: 10px; */
+  background-color: #fff;
+  display: flex;
+  margin: 50px auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.blog-contents-msg {
+  display: block;
+}
+
+.blog-contents img {
+  border-radius: 5px 0 0 5px;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.tags {
+  display: flex;
+  margin: 5px;
+  text-align: center;
+}
+
+p.tag {
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+/*BLOG文字の回転*/
+/* 文字の回転 */
+.div-animation-text-blog {
+  position: fixed;
+  z-index: 1;
+}
+
+.animation_text {
+  overflow: hidden;
+  display: flex;
+  font-weight: bold;
+  position: fixed;
+  top: 170px;
+}
+
+.blog-rotation-text {
+  display: inline-block;
+  font-size: 100px;
+  color: #ffffff82;
+  white-space: nowrap;
+  animation: text_scroll 5s linear infinite;
+  padding-left: 0%;
+  z-index: 1;
+}
+
+@keyframes text_scroll {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+}
+
+.animation_text2 {
+  overflow: hidden;
+  display: flex;
+  font-weight: bold;
+  position: fixed;
+  bottom: 100px;
+}
+
+.blog-rotation-text2 {
+  display: inline-block;
+  font-size: 100px;
+  color: #ffffff82;
+  white-space: nowrap;
+  animation: text_scroll2 5s linear infinite;
+  padding-left: 0%;
+  z-index: 1;
+}
+
+@keyframes text_scroll2 {
+  0% {
+    transform: translateX(-100%)
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
+}
+
+  /*ページネーション*/
+  .pagination {
+    margin: 70px auto;
+    position: relative;
+    z-index: 1000;
+    text-align: center;
+    justify-content: center;
+  }
+  .pagination a,
+  .pagination span {
+    display: inline-block;
+    margin: 8px 4px;
+    text-decoration: none;
+    border-radius: 6px;
+    background: #5889a9;
+    width: 50px;
+    height: 50px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 1;
+  }
+  .pagination a:hover {
+    opacity: 0.7;
+  }
+  .pagination .current {
+    background: transparent;
+    font-weight: bold;
+    background: #fff;
+    color: #5889a9;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .pagination a,
+    .pagination span {
+      margin: 4px 2px;
+      width: 46px;
+      height: 46px;
+      padding: 16px 0;
+    }
+  }

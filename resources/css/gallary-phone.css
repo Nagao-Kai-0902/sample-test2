@@ -1,0 +1,16 @@
+.title-border{
+  width: 80vw;
+}
+
+.img-all {
+  width: 95vw;
+}
+
+.img-all div {
+  margin: 0 5px;
+  width: 30vw;
+}
+
+.img-all img {
+  margin: 10px auto;
+}

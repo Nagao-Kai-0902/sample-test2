@@ -1,0 +1,38 @@
+.inner-body {
+  text-align: center;
+  margin: 120px auto;
+}
+
+.title-border{
+  width: 80vw;
+}
+
+.img-all {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  margin: 30px auto;
+}
+
+.img-all div {
+  margin: 0 10px;
+  width: 25vw;
+}
+
+.img-all img {
+  margin: 20px auto;
+}
+
+.img-all div img {
+  content: '';
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.img-all div img.active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
